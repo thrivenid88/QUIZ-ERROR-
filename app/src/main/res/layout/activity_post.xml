@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_margin="10dp">
+
+    <!-- Question Type Section -->
+    <TextView
+        android:id="@+id/textV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question type"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnMCQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4A4A4A"
+            android:text="MCQ"
+            android:textSize="15sp"
+            app:cornerRadius="8dp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnOneWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4A4A4A"
+            android:text="One Word"
+            app:cornerRadius="8dp"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnDescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4A4A4A"
+            android:text="Describe"
+            android:textSize="10sp"
+            app:cornerRadius="8dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Question Text Field -->
+    <TextView
+        android:id="@+id/textV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Question"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Start typing your question here...."
+        android:background="@android:drawable/editbox_background"
+        android:padding="8dp" />
+
+    <!-- Choices Section -->
+    <TextView
+        android:id="@+id/textV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Choices"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap on the options to mark them as the correct answer and double tap to edit the option."
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/btnOptnA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Options"
+        android:background="@drawable/button_corner"
+        android:clickable="true"
+        android:focusable="true"
+        android:inputType="text|textNoSuggestions"
+        android:gravity="left"
+        android:layout_marginTop="12dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/btnOptnB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="B.Option2"
+        android:background="@drawable/button_corner"
+        android:clickable="true"
+        android:focusable="true"
+        android:inputType="text|textNoSuggestions"
+        android:gravity="left"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/btnOptnC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="C.Option3"
+        android:background="@drawable/button_corner"
+        android:clickable="true"
+        android:focusable="true"
+        android:inputType="text|textNoSuggestions"
+        android:gravity="left"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/btnOptnD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="D.Option4"
+        android:background="@drawable/button_corner"
+        android:clickable="true"
+        android:focusable="true"
+        android:inputType="text|textNoSuggestions"
+        android:gravity="left"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:padding="10dp" />
+
+
+    <!-- Cancel and Post Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B71C1C"
+            android:text="Cancel"
+            app:cornerRadius="8dp"
+            android:textColor="#FFFFFF" />
+
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#388E3C"
+            android:text="Post"
+            app:cornerRadius="8dp"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/btnGemini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#388E3C"
+            android:text="Ask gemini"
+            app:cornerRadius="8dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
